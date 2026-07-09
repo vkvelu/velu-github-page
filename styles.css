@@ -74,7 +74,7 @@ a:focus-visible {
   width: 40px;
   height: 40px;
   place-items: center;
-  border-radius: 8px;
+  border-radius: 50%;
   background: var(--teal);
   color: #fff;
   font-size: 0.8rem;
@@ -82,9 +82,9 @@ a:focus-visible {
 }
 
 .brand-mark img {
-  width: 39px;
-  height: 39px;
-  border-radius: 8px; /* Makes it circular if you want */
+  width: 37px;
+  height: 37px;
+  border-radius: 50%; /* Makes it circular if you want */
 }
 
 .site-nav {
@@ -228,6 +228,15 @@ h3 {
   border-color: var(--line);
   background: #fff;
   color: var(--ink);
+  transition: all 0.2s ease;
+}
+
+.button.secondary:hover,
+.button.secondary:focus-visible,
+.contact-grid button:hover,
+.contact-grid button:focus-visible {
+  background: var(--wash);
+  border-color: var(--teal);
 }
 
 .profile-panel {
@@ -257,6 +266,8 @@ h3 {
 }
 
 .portrait img {
+  width: 81%;
+  height: auto;
   border-radius: 9px;
   display: block;
 }
@@ -298,6 +309,13 @@ dd {
   border-radius: 8px;
   background: var(--paper);
   padding: 22px;
+  transition: all 0.2s ease;
+}
+
+.work-item:hover {
+  border-color: var(--teal);
+  box-shadow: 0 8px 24px rgba(15, 118, 110, 0.12);
+  transform: translateY(-2px);
 }
 
 .expertise-grid p,
