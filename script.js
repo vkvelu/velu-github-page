@@ -30,7 +30,7 @@ if (navToggle && siteNav) {
 
 if (copyEmail) {
   copyEmail.addEventListener("click", async () => {
-    const email = copyEmail.getAttribute("data-email") || "";
+    const email = copyEmail.dataset.email || "";
     try {
       await navigator.clipboard.writeText(email);
       copyEmail.textContent = "Email Copied";
