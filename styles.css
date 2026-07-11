@@ -61,12 +61,6 @@ a:focus-visible {
   backdrop-filter: blur(14px);
 }
 
-@media (max-width: 720px) {
-  .site-header {
-    position: relative;
-  }
-}
-
 .brand {
   display: inline-flex;
   align-items: center;
