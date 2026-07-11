@@ -75,16 +75,16 @@ a:focus-visible {
   height: 40px;
   place-items: center;
   border-radius: 50%;
-  background: var(--teal);
   color: #fff;
   font-size: 0.8rem;
   letter-spacing: 0;
 }
 
 .brand-mark img {
-  width: 37px;
-  height: 37px;
-  border-radius: 50%; /* Makes it circular if you want */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .site-nav {
@@ -261,11 +261,7 @@ h3 {
   aspect-ratio: 1;
   margin: 0 auto 22px;
   place-items: center;
-  border: 1px solid rgba(15, 118, 110, 0.24);
   border-radius: 9px;
-  background:
-    linear-gradient(145deg, rgba(15, 118, 110, 0.9), rgba(63, 125, 85, 0.82)),
-    var(--teal);
   color: #fff;
   font-size: 2.4rem;
   font-weight: 900;
@@ -274,8 +270,9 @@ h3 {
 }
 
 .portrait img {
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 9px;
   display: block;
 }
@@ -530,5 +527,61 @@ time {
   .section-band {
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 900;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  z-index: 19;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background: var(--teal-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px rgba(19, 32, 28, 0.18);
+}
+
+.back-to-top.visible {
+  display: flex;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .back-to-top {
+    bottom: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
   }
 }
