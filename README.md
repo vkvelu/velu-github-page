@@ -1,6 +1,8 @@
 # Dr. Velusamy K. Velu Personal GitHub Page
 
-This is a static personal/professional website designed for GitHub Pages.
+Personal professional website for Dr. Velusamy K. Velu, highlighting healthcare interoperability, genomics integration, PeruseLab, scientific informatics, enterprise architecture, and AI-enabled platforms.
+
+Live site: <https://vkvelu.github.io/velu-github-page/>
 
 ## Files
 
