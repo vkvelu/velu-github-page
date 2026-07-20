@@ -1,37 +1,19 @@
 # Dr. Velusamy K. Velu Personal GitHub Page
 
-Personal professional website for Dr. Velusamy K. Velu, highlighting healthcare interoperability, genomics integration, PeruseLab, scientific informatics, enterprise architecture, and AI-enabled platforms.
+This repository hosts the personal GitHub Pages site for Dr. Velusamy K. Velu. The site highlights healthcare interoperability, genomics integration, scientific informatics, enterprise architecture, and AI-enabled platforms.
 
 Live site: <https://vkvelu.github.io/velu-github-page/>
 
-## Files
+## Project files
 
-- `index.html` - page content and structure
+- `index.html` - page structure, content, and metadata
 - `styles.css` - responsive layout and visual design
-- `script.js` - mobile menu, current year, and copy-email behavior
+- `script.js` - mobile navigation, copy-to-clipboard behavior, and back-to-top interaction
 
-## Before Publishing
+## Development
 
-Update these placeholders in `index.html`:
+Open `index.html` in a browser to preview the site locally, or serve the repository with any simple static file server.
 
-- `your.email@example.com`
-- `https://www.linkedin.com/in/your-linkedin-profile/`
-- `https://github.com/your-github-username`
+## Deployment
 
-Optional improvements:
-
-- Replace the initials portrait with a professional photo.
-- Add downloadable resume and cover-letter links.
-- Add project links for PeruseLab, GitHub repositories, or selected talks.
-
-## Publish To GitHub Pages
-
-1. Create a repository named `your-github-username.github.io`.
-2. Add these files to the root of that repository.
-3. Commit and push to the `main` branch.
-4. In GitHub, open `Settings > Pages`.
-5. Choose `Deploy from a branch`, select `main`, and choose `/root`.
-6. Your site will publish at `https://your-github-username.github.io/`.
-
-If you prefer a project site instead of a user site, place these files in any
-repository and enable GitHub Pages from `Settings > Pages`.
+The site is published through GitHub Pages from the repository root.
